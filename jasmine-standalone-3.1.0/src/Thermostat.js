@@ -2,6 +2,10 @@ function Thermostat() {
     this.temp = 20;
 }
 
-Thermostat.prototype.incTemp = function(int) {
-   this.temp = (this.temp + int)
-}; 
+Thermostat.prototype.upTemp = function() {
+   this.temp += 1
+};
+
+Thermostat.prototype.downTemp = function() {
+    this.temp -= 1
+};
