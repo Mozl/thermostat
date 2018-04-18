@@ -1,5 +1,7 @@
 function Thermostat() {
-    this.deftemp = 20;
+    this.temp = 20;
 }
 
-var thermostat = new Thermostat();
+Thermostat.prototype.incTemp = function(int) {
+   this.temp = (this.temp + int)
+}; 
