@@ -45,4 +45,12 @@ describe('Thermostat', function(){
             expect (a_thermostat.max).toEqual(32);
         });
     });
+
+    describe ('Reset', function() {
+        it ('resets temperature to 20 when called', function() {
+            a_thermostat.upTemp()
+            a_thermostat.reset();
+            expect (a_thermostat.temp).toEqual(20)
+        });
+    });
 });
