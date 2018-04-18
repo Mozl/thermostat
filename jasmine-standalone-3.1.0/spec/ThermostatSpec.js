@@ -1,4 +1,7 @@
+'use strict';
+
 describe('Thermostat', function(){
+    var a_thermostat;
 
     beforeEach(function() {
         a_thermostat = new Thermostat();
@@ -10,7 +13,7 @@ describe('Thermostat', function(){
         });
 
         it ('constructs a Thermostat object with a min temp of 10', function() {
-            expect (a_thermostat.minimum).toEqual(10);
+            expect (a_thermostat.MINIMUM).toEqual(10);
         });
     });
 
@@ -48,9 +51,25 @@ describe('Thermostat', function(){
 
     describe ('Reset', function() {
         it ('resets temperature to 20 when called', function() {
-            a_thermostat.upTemp()
+            a_thermostat.upTemp();
             a_thermostat.reset();
-            expect (a_thermostat.temp).toEqual(20)
+            expect (a_thermostat.temp).toEqual(20);
         });
     });
+
+    describe ('Usage', function() {
+        it ('should return low-usage if temperature below 18', function() {
+            a_thermostat.temp = 17;
+            expect (a_thermostat.usage()).toMatch('Low Usage');
+        });
+
+        it ('should return medium usage if temperature between 18 & 25', function() {
+            expect (a_thermostat.usage()).toMatch('Medium Usage');
+        });
+
+        it ('should return high usage if temperature is 25 or above', function() {
+            a_thermostat.temp = 26;
+            expect (a_thermostat.usage()).toMatch('High Usage');
+        });
+    }); 
 });
