@@ -4,7 +4,7 @@ $( document ).ready(function() {
   function raiseTemp() {
   thermostat.upTemp();
     $("#temp_text").html(thermostat.temp);
-    
+
   }
 
   $('#hotter').click(function() {
@@ -33,12 +33,13 @@ $( document ).ready(function() {
 
   $('#powersave').click(function() {
     if (thermostat.powersave === true) {
-    thermostat.powersaveOff();    
+    thermostat.powersaveOff();
     $("#powersavebox").css("background-color", "red");
     }
-    else if (thermostat.powersave === false)
+    else if (thermostat.powersave === false) {
     thermostat.powersaveOn();
     $("#powersavebox").css("background-color", "green");
+    }
   });
 
 
