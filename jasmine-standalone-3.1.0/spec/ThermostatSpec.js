@@ -52,7 +52,7 @@ describe('Thermostat', function(){
     describe ('Reset', function() {
         it ('resets temperature to 20 when called', function() {
             a_thermostat.upTemp();
-            a_thermostat.reset();
+            a_thermostat.resetTemp();
             expect (a_thermostat.temp).toEqual(20);
         });
     });

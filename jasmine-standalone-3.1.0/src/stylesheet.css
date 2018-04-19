@@ -27,6 +27,10 @@
 
 }
 
+#powersavebox {
+  background-color: aqua;
+}
+
 button.link {
   background: none;
   border: none;
