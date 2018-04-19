@@ -1,53 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Thermostat</title>  
+  <link rel="stylesheet" href="stylesheet.css" type='text/css'>   
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="Thermostat.js"></script>
+  <script src="index.js"></script>
 
 </head>
 
 <body>
-    <script src="jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <div id="temp1" style="background-color:rgb(148, 201, 245)">
-        <h2>Temperature: </h2>
-    </div> 
-        <h1 id="temperature"></h1>
-        <script type="text/javascript">
-        
-        </script>
-   
 
 
-    <button id="hotter" type="button">Hotter</button>
-    <button id="cooler" type="button">Cooler</button>
-    <button id="reset" type="button">Reset</button>
-    <button id="power" type="button">Powersave Toggle</button>
+   <div class='flex-container'>
+        <div id="temp1" style="background-color:rgb(148, 201, 245)">
+            <h3>Temperature:
+            <h3 id="whatever">Temperature:
+                 </h3></h3>
+        </div>
 
-    <h1></h1>
+        <div>
+            <button class="link" id="hotter" type="button">Hotter</button>
+        </div>    
 
+        <div>
+            <button class="link" id="cooler" type="button">Cooler</button>
+        </div>
+        <div>
+            <button class="link" id="reset" type="button">Reset</button>
+        </div>
+        <div>
+            <button class="link" id="powersave" type="button">Toggle Powersave</button>
+        </div>
 
-    <script>
-    function Thermostat() {
-        this.temp = 20;
-        this.max = 25
-        this.MINIMUM = 10
-        this.powersave = true
-    }
-
-    Thermostat.prototype.upTemp = function() {
-        this.temp += 1;
-};
-    var thermostat = new Thermostat;
-            $( document ).ready(function() {
- 
-            $("#temp1").slideUp(1000).slideDown(1000);
-            $('#hotter').click(function() {
-                thermostat.upTemp();
-//   alert( "Handler for .click() called." );
-});
- });
-    </script>
+        <h1></h1>>
+    </div>
 
 </body>
 </html>

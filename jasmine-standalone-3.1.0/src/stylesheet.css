@@ -1,0 +1,52 @@
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000235;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100px;
+  font-size: 30px;
+
+}
+
+#temp1 {
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+
+
+}
+
+button.link {
+  background: none;
+  border: none;
+
+}
+
+#powersave-box {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+#reset {
+
+}
+
+.center {
+    line-height: 200px;
+    height: 200px;
+    border: 3px solid green;
+    text-align: center;
+}
