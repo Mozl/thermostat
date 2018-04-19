@@ -1,13 +1,22 @@
 $( document ).ready(function() {
-var thermostat = new Thermostat();
+  var thermostat = new Thermostat();
 
-function raiseTemp() {
-    $("#whatever").html(thermostat.temp);    
-}
-raiseTemp();  
-        $('#hotter').click(function() {
-            thermostat.upTemp();
-            // alert( "Handler for .click() called." );
-            raiseTemp();
-});
+  function raiseTemp() {
+    $("#temp_text").html(thermostat.temp);
+    thermostat.upTemp();
+  }
+
+  $('#hotter').click(function() {
+    raiseTemp();
+  });
+
+  function lowerTemp() {
+    $("#temp_text").html(thermostat.temp);
+    thermostat.downTemp();
+  }
+
+  $('#cooler').click(function() {
+    lowerTemp();
+  });
+
 });

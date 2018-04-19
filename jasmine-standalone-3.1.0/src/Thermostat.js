@@ -3,14 +3,14 @@ function Thermostat() {
     this.max = 25;
     this.MINIMUM = 10;
     this.powersave = true;
-};
+}
 
 Thermostat.prototype.upTemp = function() {
     if (this.temp === this.max)
         this.temp = this.max;
     else
         this.temp += 1;
-};        
+};
 
 Thermostat.prototype.downTemp = function() {
     if (this.temp === this.MINIMUM)
@@ -21,7 +21,7 @@ Thermostat.prototype.downTemp = function() {
 
 Thermostat.prototype.powersaveOn = function() {
     this.max = 25;
-    this.powersave = true
+    this.powersave = true;
 };
 
 Thermostat.prototype.powersaveOff = function() {
@@ -30,7 +30,7 @@ Thermostat.prototype.powersaveOff = function() {
 };
 
 Thermostat.prototype.reset = function() {
-    this.temp = 20
+    this.temp = 20;
     this.powersave = true;
 };
 
@@ -39,6 +39,6 @@ Thermostat.prototype.usage = function() {
         return 'Low Usage';
     else if (this.temp < 25)
         return 'Medium Usage';
-    else (this.temp > 24)
+    else (this.temp > 24);
         return 'High Usage';
 };
