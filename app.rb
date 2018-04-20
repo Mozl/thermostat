@@ -10,7 +10,7 @@ class Thermostat < Sinatra::Base
 
   run! if app_file == $0
 
-  get '/index' do
+  get '/' do
     erb :index
   end
 
