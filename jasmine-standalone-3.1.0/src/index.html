@@ -18,8 +18,9 @@
             <h3>Temperature:
             <h3 id="temp_text">20
                  </h3></h3>
-        </div>
-
+        </div>    
+        
+        
         <div>
             <button id="hotter" type="button">Hotter</button>
         </div>
@@ -33,8 +34,28 @@
         <div id="powersavebox">
             <button class="link" id="powersave" type="button">Toggle Powersave</button>
         </div>
+        <div id="weather">
+            <p id="weathertemp">Current temperature:</p>
+            <p id="weathertemp">Current temperature:</p>
+
+        </div>
+        <div id="weather">
+            <p id="weatherlocation"></p>
+        </div>
 
         <h1></h1>>
+    </div>
+
+    <script>$.get('http://api.openweathermap.org/data/2.5/weather?q=London&APPID=a5ecde71d07e5c6eccf45b7e5023acaf&units=metric', function(weather) {
+            $('#weatherlocation').text(weather.name);
+            $('#weathertemp').text(weather.main.temp);
+
+        });
+    </script>
+
+    <div id="weather">
+        <p id="weathertemp"></p>
+        <p id="weatherlocation"></p>
     </div>
 
 </body>

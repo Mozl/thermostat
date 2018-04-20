@@ -9,7 +9,7 @@ function Thermostat() {
 
 
 Thermostat.prototype.upTemp = function() {
-    if (this.temp === this.max)
+    if (this.temp >= this.max)
         this.temp = this.max;
     else
         this.temp += 1;
@@ -39,9 +39,9 @@ Thermostat.prototype.resetTemp = function() {
 
 Thermostat.prototype.usage = function() {
     if (this.temp < 18)
-        return 'Low Usage';
+        return '#05c10d';
     else if (this.temp < 25)
-        return 'Medium Usage';
+        return '#ffa800';
     else (this.temp > 24);
-        return 'High Usage';
+        return '#ff0000';
 };
