@@ -35,14 +35,14 @@ $( document ).ready(function() {
 
   $('#powersave').click(function() {
     if (thermostat.powersave === true) {
-    thermostat.powersaveOff();
-    $("#powersavebox").css("background-color", "red");
-    $('#temp1').css("background-color", thermostat.usage());
+        thermostat.powersaveOff();
+        $("#powersavebox").css("background-color", "red");
+        $('#temp1').css("background-color", thermostat.usage());
     }
     else if (thermostat.powersave === false) {
-    thermostat.powersaveOn();
-    $("#powersavebox").css("background-color", "green");
-    $('#temp1').css("background-color", thermostat.usage());
+        thermostat.powersaveOn();
+        $("#powersavebox").css("background-color", "green");
+        $('#temp1').css("background-color", thermostat.usage());
     }
   });
 
