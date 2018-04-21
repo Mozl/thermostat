@@ -46,9 +46,4 @@ $( document ).ready(function() {
     }
   });
 
-  $.get('http://localhost:9292/index', function(sinatraapp) {
-    $('sinatra').html()
-    console.log(sinatraapp);
-  })
-
 });
