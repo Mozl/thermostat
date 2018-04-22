@@ -9,7 +9,7 @@ $( document ).ready(function() {
     $('#temp1').css("background-color", thermostat.usage());
   }
 
-  $('#hotter').click(function() {
+  $('#hotterbutton').click(function() {
     raiseTemp();
   });
 
