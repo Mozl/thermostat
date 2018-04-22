@@ -33,7 +33,7 @@ $( document ).ready(function() {
     resetTemperature();
   });
 
-  $('#powersavebutton').click(function() {
+  $('#powersavebox').click(function() {
     if (thermostat.powersave === true) {
         thermostat.powersaveOff();
         $("#powersavebox").css("background-color", "red");
