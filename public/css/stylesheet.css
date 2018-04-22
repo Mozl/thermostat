@@ -10,12 +10,12 @@
 
 .flex-container > div {
   background-color: #f1f1f1;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   margin: 10px;
-  border-radius: 50%;
+  border-radius: 30%;
   text-align: center;
-  line-height: 70px;
+  line-height: 150px;
   font-size: 30px;
   font-family: 'Gugi', cursive;
 
@@ -39,9 +39,15 @@
   background-color: green;
 }
 
+#hotterbutton {
+  font-size: 150px;
+}
+
 button.link {
   background: none;
   border: none;
+  font-family: 'Gugi', cursive;
+  font-size: 30px;
 
 }
 
