@@ -19,7 +19,7 @@ $( document ).ready(function() {
     $('#temp1').css("background-color", thermostat.usage());
   }
 
-  $('#cooler').click(function() {
+  $('#coolerbutton').click(function() {
     lowerTemp();
   });
 
@@ -29,11 +29,11 @@ $( document ).ready(function() {
     $('#temp1').css("background-color", thermostat.usage());
   }
 
-  $('#reset').click(function() {
+  $('#resetbutton').click(function() {
     resetTemperature();
   });
 
-  $('#powersave').click(function() {
+  $('#powersavebutton').click(function() {
     if (thermostat.powersave === true) {
         thermostat.powersaveOff();
         $("#powersavebox").css("background-color", "red");
