@@ -42,6 +42,6 @@ Thermostat.prototype.usage = function() {
         return '#05c10d';
     else if (this.temp < 25)
         return '#ffa800';
-    else (this.temp > 24);
+    else
         return '#ff0000';
 };
