@@ -97,6 +97,7 @@ DEPENDENCIES
   capybara
   pg
   pry
+  rack
   rake
   rspec
   rubocop

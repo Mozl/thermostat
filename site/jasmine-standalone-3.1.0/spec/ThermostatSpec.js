@@ -1,5 +1,3 @@
-'use strict';
-
 describe('Thermostat', function(){
     var a_thermostat;
 
