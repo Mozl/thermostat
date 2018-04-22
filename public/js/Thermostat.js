@@ -1,4 +1,4 @@
-const MINIMUM = 10;
+var MINIMUM = 10;
 
 function Thermostat() {
     this.temp = 20;
